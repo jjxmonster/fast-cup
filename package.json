@@ -1,21 +1,21 @@
 {
-  "name": "faceitapp",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "build": "cd frontend && npm run build",
-    "start": "nodemon ./bin/www"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "file-loader": "^6.2.0",
-    "morgan": "~1.9.1",
-    "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.7",
-    "react": "^17.0.1",
-    "react-twitch-embed": "^2.1.0"
-  }
+   "name": "faceitapp",
+   "version": "0.0.0",
+   "private": true,
+   "scripts": {
+      "build": "cd frontend && npm run build",
+      "start": "nodemon ./bin/www"
+   },
+   "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "cors": "^2.8.5",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "file-loader": "^6.2.0",
+      "morgan": "~1.9.1",
+      "node-fetch": "^2.6.1",
+      "nodemon": "^2.0.7",
+      "react": "^17.0.1",
+      "react-twitch-embed": "^2.1.0"
+   }
 }
