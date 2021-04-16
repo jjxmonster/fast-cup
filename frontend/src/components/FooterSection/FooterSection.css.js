@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const StyledTopContainer = styled.div`
    flex: 8;
    display: flex;
+   @media (max-width: 750px) {
+      flex-direction: column;
+   }
 `;
 export const StyledLeftSection = styled.div`
    flex: 1;
@@ -28,6 +31,9 @@ export const StyledLeftSectionContent = styled.div`
    align-items: center;
    justify-content: space-between;
    flex-direction: column;
+   @media (max-width: 750px) {
+      padding-left: 0px;
+   }
 `;
 export const StyledFAQElement = styled.div`
    width: 70%;
@@ -52,6 +58,10 @@ export const StyledFAQElement = styled.div`
          font-family: 'Roboto', sans-serif;
          color: ${({ theme }) => theme.colors.blue.light};
       }
+   }
+   @media (max-width: 750px) {
+      width: 90%;
+      margin-top: 10%;
    }
 `;
 
@@ -93,6 +103,9 @@ export const StyledBottomContainer = styled.div`
       }
    }
    border-top: 2px solid ${({ theme }) => theme.colors.blue.normal};
+   @media (max-width: 750px) {
+      flex: 5;
+   }
 `;
 
 export const StyledRightSectionContainer = styled.div`

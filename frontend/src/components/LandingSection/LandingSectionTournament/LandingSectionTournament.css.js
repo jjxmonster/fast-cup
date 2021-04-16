@@ -37,6 +37,9 @@ export const StyledSoonTournamentInfo = styled.div`
          > .maxTeams {
             color: ${({ theme }) => theme.colors.blue.light};
          }
+         @media (max-width: 750px) {
+            font-size:4vh;
+         }
       }
       > a{
          display:flex;
@@ -51,6 +54,7 @@ export const StyledSoonTournamentInfo = styled.div`
    }
    @media (max-width: 750px) {
       flex-direction: column;
+      flex:6;
    }
 `;
 
