@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const StyledModalMainContainer = styled.div`
    flex: 10;
    display: flex;
+   @media (max-width: 750px) {
+      flex-direction: column;
+      flex: 8;
+   }
 `;
 
 export const StyledLeftSection = styled.section`
@@ -15,15 +19,23 @@ export const StyledLeftSection = styled.section`
       flex-direction: column;
       padding-left: 50px;
       flex: 3;
+      @media (max-width: 750px) {
+         padding-left: 20px;
+      }
       > h3 {
          font-size: 2vh;
          color: white;
          font-family: BebasNeue-Light;
       }
       > p {
-         font-size: 2vh;
+         font-size: 1.8vh;
          color: ${({ theme }) => theme.colors.gray.light};
          padding-top: 10px;
+         font-family: 'Roboto', sans-serif;
+         @media (max-width: 750px) {
+            font-size: 1.7vh;
+            padding-bottom: 5px;
+         }
       }
    }
    > ul {
@@ -31,11 +43,17 @@ export const StyledLeftSection = styled.section`
       flex: 5;
       display: flex;
       flex-direction: column;
+      @media (max-width: 750px) {
+         padding-left: 20px;
+      }
       > li {
          border-bottom: 2px solid ${({ theme }) => theme.colors.blue.dark};
          width: 100%;
          height: 20%;
          display: flex;
+         @media (max-width: 750px) {
+            flex: 1;
+         }
          > div {
             font-size: 2vh;
             height: 100%;
@@ -60,6 +78,10 @@ export const StyledRightSection = styled.section`
    display: flex;
    flex-direction: column;
    margin: 15px;
+   @media (max-width: 750px) {
+      margin: 0px;
+      border-radius: 0px;
+   }
 `;
 
 export const StyledRightSectionNavBar = styled.nav`
@@ -79,6 +101,9 @@ export const StyledNavigationButton = styled.a`
    cursor: pointer;
    z-index: 100;
    position: relative;
+   @media (max-width: 750px) {
+      width: 25%;
+   }
    &:after {
       width: 0%;
       left: 0;

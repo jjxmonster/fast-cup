@@ -20,17 +20,15 @@ const TournamentsSection = () => {
       fetchTournaments()
    );
    const [filter, setFilter] = useState('ALL');
-   const [filteredTournaments, setFIlteredTournaments] = useState(
-      tournaments.result
-   );
+   const [filteredTournaments, setFIlteredTournaments] = useState(tournaments);
 
    useEffect(() => {
       switch (filter) {
          case 'ALL':
-            return setFIlteredTournaments(tournaments.result);
+            return setFIlteredTournaments(tournaments);
          case 'ACTIVE':
             return setFIlteredTournaments(
-               tournaments.result.filter(
+               tournaments.filter(
                   tournament =>
                      tournament.status === 'join' ||
                      tournament.status === 'adjustment'
@@ -38,14 +36,14 @@ const TournamentsSection = () => {
             );
          case 'FINISHED':
             return setFIlteredTournaments(
-               tournaments.result.filter(
+               tournaments.filter(
                   tournament => tournament.status === 'finished'
                )
             );
          default:
-            return setFIlteredTournaments(tournaments.result);
+            return setFIlteredTournaments(tournaments);
       }
-   }, [filter, tournaments.result]);
+   }, [filter, tournaments]);
 
    return (
       <>

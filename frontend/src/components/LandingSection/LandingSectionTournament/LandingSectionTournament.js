@@ -21,7 +21,7 @@ const LandingSectionTournament = () => {
       fetchTournaments()
    );
 
-   const activeTournaments = tournaments.result.filter(
+   const activeTournaments = tournaments.filter(
       tournament => tournament.status === 'join'
    );
 

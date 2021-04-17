@@ -34,7 +34,12 @@ export const StyledTeamAvatar = styled.div`
    overflow: hidden;
    border: 2px solid ${({ theme }) => theme.colors.blue.light};
    ${({ isActive }) => (isActive ? `transform:translateY(-55%);` : null)};
-
+   @media (max-width: 750px) {
+      width: 12vw;
+      height: 12vw;
+      border: 2px solid ${({ theme }) => theme.colors.blue.light};
+      ${({ isActive }) => (isActive ? `transform:translateY(-150%);` : null)};
+   }
    > a img {
       width: 100%;
       height: 100%;
@@ -51,11 +56,20 @@ export const StyledTeamPlayers = styled.div`
    transition: 0.5s ease;
    opacity: ${({ isVisible }) => (isVisible ? `1` : `0`)};
    padding: 10px;
+   @media (max-width: 750px) {
+      width: 130%;
+      padding: 0;
+      display: flex;
+      align-items: flex-end;
+   }
    > ul {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
+      @media (max-width: 750px) {
+         height: 80%;
+      }
       > .listHeader {
          color: ${({ theme }) => theme.colors.green.normal};
          font-size: 2vh;
@@ -112,6 +126,9 @@ export const StyledButtonWrapper = styled.button`
       color: ${({ theme }) => theme.colors.gray.light};
       font-size: 6vh;
    }
+   @media (max-width: 750px) {
+      width: 25%;
+   }
 `;
 
 export const StyleForwardButton = styled(StyledButtonWrapper)`
@@ -140,4 +157,5 @@ export const StyledMessageInSections = styled.h3`
    justify-content: center;
    color: ${({ theme }) => theme.colors.blue.light};
    font-size: 3vh;
+   text-align: center;
 `;

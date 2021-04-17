@@ -26,4 +26,23 @@ export const StyledTournamentModal = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: center;
+   @media (max-width: 750px) {
+      width: 95%;
+      height: 95%;
+   }
+`;
+
+export const StyledMobileCloseButton = styled.div`
+   width: 35px;
+   height: 35px;
+   background: ${({ theme }) => theme.colors.blue.light};
+   opacity: 0.7;
+   position: absolute;
+   top: -2%;
+   right: -2%;
+   margin: auto;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 `;

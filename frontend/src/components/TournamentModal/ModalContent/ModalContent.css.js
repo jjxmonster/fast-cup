@@ -20,6 +20,9 @@ export const StyledModalNavigation = styled.nav`
          color: #95a1b0;
       }
    }
+   @media (max-width: 750px) {
+      flex: 0.7;
+   }
 `;
 
 export const StyledModalHeader = styled.div`
@@ -30,6 +33,18 @@ export const StyledModalHeader = styled.div`
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   > h2 {
+      font-size: 5vh;
+   }
+   @media (max-width: 750px) {
+      h2 {
+         font-size: 2.5vh;
+      }
+   }
+   @media (max-width: 750px) {
+      flex: 1;
+      padding: 0 20px;
+   }
 `;
 
 export const StyledJoinButton = styled.button`
@@ -53,7 +68,12 @@ export const StyledJoinButton = styled.button`
       opacity:1;
       &:hover{
          box-shadow: 0px 0px 20px 0px rgba(84,195,253,1);
-      }
-      
+      } 
    `}
+
+   @media (max-width: 750px) {
+      width: 100px;
+      height: 40px;
+      font-size: 15px;
+   }
 `;

@@ -69,7 +69,7 @@ const ModalBar = () => {
    const joinFullTime = `${joinHours}:${
       joinMinutes < 10 ? '0' + joinMinutes : joinMinutes
    }`;
-
+   console.log(teams);
    const showTournamentInformation =
       status === 'finished' ? (
          <h3>TURNIEJ ZAKOŃCZONY</h3>

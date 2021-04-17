@@ -22,7 +22,7 @@ const ModalContent = () => {
       fetchTournaments()
    );
 
-   const currentTournament = tournaments.result.filter(
+   const currentTournament = tournaments.filter(
       tournament => tournament.id === id
    )[0];
    const arrow = ' > ';

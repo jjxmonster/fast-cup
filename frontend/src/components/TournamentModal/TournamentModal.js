@@ -11,6 +11,7 @@ import ModalContent from './ModalContent';
 import {
    StyledModalWrapper,
    StyledTournamentModal,
+   StyledMobileCloseButton,
 } from './TournamentModal.css';
 
 const TournamentModal = () => {
@@ -32,6 +33,9 @@ const TournamentModal = () => {
             id='tournamentModal'
             onClick={e => e.stopPropagation()}
          >
+            <StyledMobileCloseButton onClick={handleGoBack}>
+               &#10006;
+            </StyledMobileCloseButton>
             <Suspense fallback={<LoadingIndicator />}>
                <ModalContent />
             </Suspense>

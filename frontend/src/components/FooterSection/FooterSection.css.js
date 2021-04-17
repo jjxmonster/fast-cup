@@ -105,6 +105,7 @@ export const StyledBottomContainer = styled.div`
    border-top: 2px solid ${({ theme }) => theme.colors.blue.normal};
    @media (max-width: 750px) {
       flex: 5;
+      padding: 5%;
    }
 `;
 

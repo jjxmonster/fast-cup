@@ -20,6 +20,9 @@ export const StyledTournamentBar = styled.div`
       flex-direction: row;
       font-size: 3vh;
    }
+   @media (max-width: 750px) {
+      flex-direction: column;
+   }
 `;
 
 export const StyledTournamentDates = styled.div`
@@ -49,6 +52,7 @@ export const StyledTournamentDates = styled.div`
          color: ${({ theme }) => theme.colors.gray.normal};
       }
    }
+  
 `;
 
 export const StyledJoinedTeams = styled.div`
@@ -61,6 +65,11 @@ export const StyledJoinedTeams = styled.div`
    > span {
       color: ${({ theme }) => theme.colors.green.normal};
    }
+   @media (max-width: 750px) {
+      align-items: flex-start;
+      padding-left: 20px;
+      flex: 2;
+   }
 `;
 
 export const StyledJoinedTeamsAvatars = styled.div`
@@ -68,6 +77,9 @@ export const StyledJoinedTeamsAvatars = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+   @media (max-width: 750px) {
+      justify-content: flex-start;
+   }
    > .anotherTeamsCount {
       flex: 1;
       padding-right: 5px;
@@ -79,6 +91,10 @@ export const StyledJoinedTeamsAvatars = styled.div`
          width: 55px;
          height: 55px;
          border-radius: 50%;
+         @media (max-width: 750px) {
+            width: 40px;
+            height: 40px;
+         }
       }
    }
    > .teamsAvatars {
@@ -111,6 +127,12 @@ export const StyledJoinedTeamsAvatars = styled.div`
          background: #15212e;
          margin-left: 70%;
       }
+
+      @media (max-width: 750px) {
+         width: 40px;
+         height: 40px;
+      }
+
       > img {
          width: 100%;
          height: 100%;
