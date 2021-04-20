@@ -16,9 +16,9 @@ https://fast-cup.herokuapp.com
 
 ## About The Project
 
-<img src="./img/landing.png" alt="landing" width="1000" height="600">
+<img src="./img/landing.png" alt="landing" width="1000" height="500">
 <br>
-<img src="./img/modal.png" alt="modal" width="1000" height="600">
+<img src="./img/modal.png" alt="modal" width="1000" height="500">
 
 <p align="center">
 User can view the tournaments and filter them. After click the
