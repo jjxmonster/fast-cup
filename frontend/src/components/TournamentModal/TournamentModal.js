@@ -8,6 +8,9 @@ import { modalAnimation } from '../Animations/Animations';
 import LoadingIndicator from '../LoadingIndicator';
 import ModalContent from './ModalContent';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import {
    StyledModalWrapper,
    StyledTournamentModal,
@@ -34,7 +37,7 @@ const TournamentModal = () => {
             onClick={e => e.stopPropagation()}
          >
             <StyledMobileCloseButton onClick={handleGoBack}>
-               &#10006;
+               <FontAwesomeIcon icon={faTimes} />
             </StyledMobileCloseButton>
             <Suspense fallback={<LoadingIndicator />}>
                <ModalContent />

@@ -35,14 +35,24 @@ export const StyledTournamentModal = styled.div`
 export const StyledMobileCloseButton = styled.div`
    width: 35px;
    height: 35px;
-   background: ${({ theme }) => theme.colors.blue.light};
    opacity: 0.7;
    position: absolute;
-   top: -2%;
-   right: -2%;
+   top: 1%;
+   right: 1%;
+   color: ${({ theme }) => theme.colors.gray.light};
+   transition: 0.2s ease;
    margin: auto;
    border-radius: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
+   cursor: pointer;
+   &:hover {
+      color: white;
+   }
+   @media (max-width: 750px) {
+      top: 0;
+      right: 0;
+      color: white;
+   }
 `;

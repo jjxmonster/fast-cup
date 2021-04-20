@@ -8,6 +8,9 @@ export const StyledModalNavigation = styled.nav`
    > p {
       color: ${({ theme }) => theme.colors.gray.normal};
       font-size: 2vh;
+      @media (max-width: 750px) {
+         display: none;
+      }
       > span:nth-child(1) {
          color: #e6e6e6;
          cursor: pointer;
@@ -21,7 +24,7 @@ export const StyledModalNavigation = styled.nav`
       }
    }
    @media (max-width: 750px) {
-      flex: 0.7;
+      flex: 0.5;
    }
 `;
 

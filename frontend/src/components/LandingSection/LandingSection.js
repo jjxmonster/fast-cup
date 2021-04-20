@@ -27,7 +27,7 @@ const LandingSection = () => {
       <WrapperComponent>
          <StyledLandingBar>
             <div className='BarLogo'>
-               <img src={Logo} />
+               <img src={Logo} alt='logo' />
             </div>
             <div className='BarSlogan'>
                <h1>FASTCUP</h1>
