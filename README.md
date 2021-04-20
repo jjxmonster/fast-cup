@@ -13,3 +13,19 @@ https://fast-cup.herokuapp.com
     <br />
   </p>
 </p>
+
+## About The Project
+
+<img src="./img/landing.png" alt="landing" width="100" height="100">
+<br>
+<img src="./img/modal.png" alt="modal" width="100" height="100">
+
+### Built With
+
+-  [React]()
+-  [React-Query]()
+-  [Styled Components]()
+-  [Styled Components]()
+-  [Context API]()
+-  [Node.js]()
+-  [Express.js](
