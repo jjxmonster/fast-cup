@@ -22,10 +22,9 @@ https://fast-cup.herokuapp.com
 
 ### Built With
 
--  [React]()
--  [React-Query]()
--  [Styled Components]()
--  [Styled Components]()
--  [Context API]()
--  [Node.js]()
--  [Express.js](
+-  React
+-  React-Query
+-  Styled Components
+-  Context API
+-  Node.js
+-  Express.js
