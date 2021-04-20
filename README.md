@@ -16,9 +16,9 @@ https://fast-cup.herokuapp.com
 
 ## About The Project
 
-<img src="./img/landing.png" alt="landing" width="100" height="100">
+<img src="./img/landing.png" alt="landing" width="1000" height="600">
 <br>
-<img src="./img/modal.png" alt="modal" width="100" height="100">
+<img src="./img/modal.png" alt="modal" width="1000" height="600">
 
 ### Built With
 
